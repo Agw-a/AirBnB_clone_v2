@@ -20,7 +20,7 @@ def hbnb():
 
 @app.route('/c/<string:text>', strict_slashes=False)
 def c_text(text):
-    """ displays c and some text """
+    """ displays c and text """
     return "C %s" % text.replace('_', ' ')
 
 
@@ -42,9 +42,10 @@ def number_template(n):
     """ displays a html page"""
     return render_template("5-number.html", num=n)
 
+
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
 def odd_or_even(n):
-    """ displays: html page"""
+    """ displays a html page"""
     return render_template("6-number_odd_or_even.html", num=n)
 
 if __name__ == '__main__':
