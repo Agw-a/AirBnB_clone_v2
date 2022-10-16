@@ -29,9 +29,10 @@ def python_text(text):
     """ displays Python and some text """
     return "Python %s" % text.replace('_', ' ')
 
+
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
-    """ displays-> n is a number """
+    """ displays n is a number """
     return "%d is a number" % n
 
 if __name__ == '__main__':
